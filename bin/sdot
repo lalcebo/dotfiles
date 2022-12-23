@@ -2,7 +2,8 @@
 
 set -euo pipefail
 
-source "/Users/jorge/.dotfiles/shell/bash/.bashrc"
+#source "/Users/jorge/.dotfiles/shell/bash/.bashrc"
+source "/Users/jorge/.dotfiles/shell/zsh/.zshrc"
 
 ##? dot, but without environment variables
 ##?

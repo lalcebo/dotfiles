@@ -27,3 +27,8 @@ prompt ${DOTLY_THEME:-codely}
 source "$DOTLY_PATH/shell/zsh/bindings/dot.zsh"
 source "$DOTLY_PATH/shell/zsh/bindings/reverse_search.zsh"
 source "$DOTFILES_PATH/shell/zsh/key-bindings.zsh"
+
+if [ $TERM_PROGRAM != "Apple_Terminal" ]; then
+  source "$DOTFILES_PATH/shell/zsh/zle-line-init.zsh"
+  eval "$(oh-my-posh init zsh --config $(brew --prefix oh-my-posh)/themes/atomic.omp.json)"
+fi
