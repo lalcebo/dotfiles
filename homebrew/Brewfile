@@ -1,0 +1,58 @@
+# Binaries
+brew 'awscli'                   # Official Amazon AWS command-line interface
+brew 'bash'                     # Latest Bash version
+brew 'bat'                      # "cat" on steroids
+brew "coreutils"
+brew 'mas'                      # Mac App Store manager
+brew "gh"                       # Command-line interface for GitHub
+brew "sqlite"                   # Command-line interface for SQLite
+brew "git"
+brew "git-lfs"
+brew "gnupg"
+brew "grep"
+brew 'httpie'
+brew 'minikube'
+brew "kubecolor"
+brew "kubernetes-cli"
+brew "node"
+brew "pkg-config"
+brew "starship"                 # Cross-shell prompt for astronauts
+brew "tree"
+brew "trash"
+brew "fzf"                      # Command-line fuzzy finder written in Go
+brew "neofetch"                 # Fast, highly customisable system info script
+brew "zsh-autosuggestions"      # Fast, unobtrusive autosuggestions for zsh
+brew "zsh-syntax-highlighting"  # Shell-like syntax highlighting for zsh
+cask "logi-options+"            # Software for Logitech devices
+
+# Development
+brew "pnpm"
+brew "yarn"
+
+# Applications
+cask "brave-browser"
+cask "google-chrome"
+cask "firefox"
+cask "docker"
+cask "grammarly-desktop"
+cask "httpie"
+cask "iterm2"
+cask "pearcleaner"              # Application uninstaller
+cask "postman"
+cask "phpstorm"
+cask "pycharm"
+cask "datagrip"
+cask "webstorm"
+cask "visual-studio-code"
+cask "raycast"
+cask "rectangle"
+cask "slack"
+cask "discord"
+cask "vlc"                      # Multimedia player
+
+# Fonts
+cask "font-fira-code-nerd-font"
+cask "font-jetbrains-mono-nerd-font"
+
+# Mac App Store
+mas 'WhatsApp', id: 310633997
