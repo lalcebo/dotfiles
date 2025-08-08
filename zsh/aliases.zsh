@@ -19,8 +19,7 @@ alias pstorm='open -a /Applications/PhpStorm.app "`pwd`"'
 alias pcharm='open -a /Applications/PyCharm.app "`pwd`"'
 alias wstorm='open -a /Applications/WebStorm.app "`pwd`"'
 
-# Easier navigation: .., ..., ~ and -
-alias -- -='cd -'
+# Navigation
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
@@ -63,7 +62,7 @@ alias gcob='git checkout -b '
 alias gcofzf='git branch | fzf | xargs git checkout' # Select branch with fzf
 alias gre='git remote'
 alias gres='git remote show'
-alias glgg='git log --graph --max-count=5 --decorate --pretty="oneline"'
+alias glgg='git log --graph --max-count=10 --decorate --pretty="oneline"'
 alias gm='git merge'
 alias gp='git push'
 alias gpo='git push origin'
@@ -73,7 +72,7 @@ alias gcm='git commit -m'
 alias gcmnv='git commit --no-verify -m'
 alias gcanenv='git commit --amend --no-edit --no-verify'
 
-# Function to commit with ticket ID from current branch, with optional push
+# Function to commit with ticket ID from the current branch, with optional push
 quick_commit() {
   local branch_name ticket_id commit_message push_flag
   branch_name=$(git branch --show-current)
@@ -92,6 +91,9 @@ quick_commit() {
 
 alias gqc='quick_commit'
 alias gqcp='quick_commit push'
+
+# Terraform
+alias tf="terraform"
 
 # Laravel
 alias a="artisan"

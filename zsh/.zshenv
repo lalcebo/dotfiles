@@ -16,5 +16,17 @@ export GPG_TTY=$(tty)
 export EDITOR="nano"
 export VISUAL="code"
 
-# Add /usr/local/bin to the beginning of the PATH environment variable.
-export PATH="/usr/local/bin:$PATH"
+# Compilers
+export LDFLAGS="-L/opt/homebrew/opt/mysql-client/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/mysql-client/include"
+
+export LDFLAGS="-L/opt/homebrew/opt/ruby/lib $LDFLAGS"
+export CPPFLAGS="-I/opt/homebrew/opt/ruby/include $CPPFLAGS"
+
+# pkg-config
+export PKG_CONFIG_PATH=/opt/homebrew/opt/mysql-client/lib/pkgconfig
+export PKG_CONFIG_PATH=${PKG_CONFIG_PATH}:/opt/homebrew/opt/ruby/lib/pkgconfig
+
+# Async mode for autocompletion
+ZSH_AUTOSUGGEST_USE_ASYNC=true
+ZSH_HIGHLIGHT_MAXLENGTH=300

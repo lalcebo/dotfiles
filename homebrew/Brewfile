@@ -1,3 +1,6 @@
+# Taps, only keep the non-standard tap
+tap 'hashicorp/tap'
+
 # Binaries
 brew 'awscli'                   # Official Amazon AWS command-line interface
 brew 'bash'                     # Latest Bash version
@@ -20,10 +23,12 @@ brew "starship"                 # Cross-shell prompt for astronauts
 brew "tree"
 brew "trash"
 brew "fzf"                      # Command-line fuzzy finder written in Go
+brew "zoxide"                   # Smarter cd command, inspired by z and autojump
 brew "neofetch"                 # Fast, highly customisable system info script
 brew "zsh-autosuggestions"      # Fast, unobtrusive autosuggestions for zsh
 brew "zsh-syntax-highlighting"  # Shell-like syntax highlighting for zsh
-cask "logi-options+"            # Software for Logitech devices
+brew "hashicorp/tap/terraform"
+brew "ruby"
 
 # Development
 brew "pnpm"
@@ -48,11 +53,14 @@ cask "raycast"
 cask "rectangle"
 cask "slack"
 cask "discord"
-cask "vlc"                      # Multimedia player
+cask "iina"                     # Multimedia player
+cask "logi-options+"            # Software for Logitech devices
 
 # Fonts
 cask "font-fira-code-nerd-font"
 cask "font-jetbrains-mono-nerd-font"
 
 # Mac App Store
+mas 'Xcode', id: 497799835
 mas 'WhatsApp', id: 310633997
+mas 'The Unarchiver', id: 425424353

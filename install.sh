@@ -18,7 +18,12 @@ info "Dotfiles installation initialized..."
 read -p "Install apps? [y/n] " install_apps
 read -p "Overwrite existing dotfiles? [y/n] " overwrite_dotfiles
 
-admin_auth
+# Ask for the administrator password upfront
+warning "⚠ We need your password for some installation steps"
+sudo -v
+
+# Keep-alive: update existing `sudo` time stamp until script has finished
+while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 if [[ "$install_apps" == "y" ]]; then
   install_xcode
