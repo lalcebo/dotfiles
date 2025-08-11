@@ -2,9 +2,8 @@
 setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_FCNTL_LOCK
 
-# Add path to current $PATH environment if not exist
 add_to_path() {
-  if [ -d "$1" ] && [[ ":$PATH:" != *":$1:"* ]]; then
+  if [[ ":$PATH:" != *":$1:"* ]]; then
     export PATH="$1:$PATH"
   fi
 }
