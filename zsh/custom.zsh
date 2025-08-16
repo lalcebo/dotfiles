@@ -1,5 +1,6 @@
-eval "$(/opt/homebrew/bin/brew shellenv)"
 export HOMEBREW_NO_AUTO_UPDATE=1
+export HOMEBREW_DOWNLOAD_CONCURRENCY=auto
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 export STARSHIP_CONFIG=$HOME/.config/starship/starship.toml
 eval "$(starship init zsh)"
