@@ -111,3 +111,4 @@ alias saclear='sail artisan optimize:clear'
 
 # K8s
 alias kubectl="kubecolor"
+alias kc="kubectl"

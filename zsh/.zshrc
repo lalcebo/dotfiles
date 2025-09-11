@@ -38,7 +38,6 @@ source $HOME/.bun/_bun
 source <(ng completion script)
 source <(flutter bash-completion)
 
-# opencode
-export PATH=/Users/lalcebo/bin:$PATH
-
-. "$HOME/Library/Application Support/krita/ai_diffusion/server/uv/env"
+source <("$(brew --prefix)/bin/kubectl" completion zsh)
+compdef kubecolor=kubectl
+compdef kc=kubectl
