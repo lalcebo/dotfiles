@@ -39,6 +39,12 @@ apply_osx_system_defaults() {
   # Close any open System Settings panes, to prevent them from overriding settings we're about to change
   osascript -e 'tell application "System Settings" to quit'
 
+  # Set computer name (as done via System Settings → Sharing)
+  sudo scutil --set ComputerName "Lalcebo’s MacBook Pro"
+  sudo scutil --set HostName "Lalcebo-MacBook-Pro"
+  sudo scutil --set LocalHostName "Lalcebo-MacBook-Pro"
+  sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "Lalcebo-MacBook-Pro"
+
   # Disable the sound effects on boot
   sudo nvram SystemAudioVolume=" "
   defaults write "com.apple.systemsound" "com.apple.sound.uiaudio.enabled" -int 0
