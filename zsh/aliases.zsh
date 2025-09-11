@@ -18,6 +18,7 @@ alias please='sudo'
 alias pstorm='open -a /Applications/PhpStorm.app "`pwd`"'
 alias pcharm='open -a /Applications/PyCharm.app "`pwd`"'
 alias wstorm='open -a /Applications/WebStorm.app "`pwd`"'
+alias goland='open -a /Applications/GoLand.app "`pwd`"'
 
 # Navigation
 alias ..='cd ..'
